@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Push App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Push App is a demo of pushing notifications on the Web."
+    />
+    <meta
+      name="keywords"
+      content="PWA, Push API, Notifications API, Service Worker API, Web Push"
+    />
+    <meta name="author" content="Vlad Kvaskov" />
+
+    <link
+      rel="shortcut icon"
+      href="icons/Push-Notifications-App-64.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="icons/Push-Notifications-App-64.png" sizes="64x64" />
+    <link
+      rel="icon"
+      href="icons/Push-Notifications-App-192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="icons/Push-Notifications-App-512.png"
+      sizes="512x512"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Push App" />
+    <link rel="apple-touch-icon" href="icons/Push-Notifications-App-192.png" />
+
+    <meta
+      name="msapplication-TileImage"
+      href="icons/Push-Notifications-App-192.png"
+    />
+    <meta name="msapplication-TileColor" content="white" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/ladda.css" />
+    <link rel="stylesheet" href="/css/sleek.css" />
+    <link rel="stylesheet" href="/css/sweetalert.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="notifications-block">
+      <form class="push-notification-form">
+        <div class="txt-area">
+          <textarea
+            name="push_message_txt"
+            id="push_message_txt"
+            maxlength="100"
+            placeholder="Enter a message that you want to push..."
+          ></textarea>
+          <span id="txt_length_span">0/500</span>
+        </div>
+
+        <div class="form-bottom alert alert-secondary alert-outlined">
+          <div class="notifications-switcher">
+            <label
+              for="notifications_toggler"
+              id="notification_label"
+              class="notification-label text-secondary"
+            >
+              <i class="mdi mdi-alarm"></i> Notifications
+            </label>
+            <label
+              class="switch switch-text switch-primary switch-pill form-control-label"
+            >
+              <input
+                type="checkbox"
+                id="notifications_toggler"
+                class="switch-input form-check-input"
+              />
+              <span class="switch-label" data-on="On" data-off="Off"></span>
+              <span class="switch-handle"></span>
+            </label>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary mdi mdi-send"
+            id="pushBttn"
+            disabled
+          >
+            Push
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/sweetalert.js"></script>
+    <script src="js/spin.js"></script>
+    <script src="js/ladda.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

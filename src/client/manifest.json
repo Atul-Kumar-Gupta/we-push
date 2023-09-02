@@ -1,0 +1,26 @@
+{
+  "name": "Push App",
+  "short_name": "Push App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#f5f6fa",
+
+  "icons": [
+    {
+      "src": "icons/Push-Notifications-App-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Push-Notifications-App-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Push-Notifications-App-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
